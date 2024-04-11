@@ -38,14 +38,14 @@ fun Calculator(
                 ) {
 
             Text(
-                    text = state.number1 + (state.operation ?: "") + state.number2 ,
+                    text = state.number1 + (state.operation?.symbol ?: "") + state.number2 ,
                     textAlign = TextAlign.End,
                     modifier = Modifier
                         .fillMaxWidth()
                         .padding(vertical = 32.dp),
                     fontWeight = FontWeight.Light,
                     fontSize = 80.sp,
-                    color = Color.White,
+                    color = Color.Black,
                     maxLines = 2
                 )
 

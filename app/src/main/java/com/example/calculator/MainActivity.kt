@@ -33,7 +33,8 @@ class MainActivity : ComponentActivity() {
                         .fillMaxSize()
                         .padding(16.dp),
                     buttonSpacing = buttonSpacing,
-                    onAction = viewModel::onAction)
+                    onAction = viewModel::onAction
+                )
             }
         }
     }
